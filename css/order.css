@@ -1,0 +1,32 @@
+/*      ****** HOW WE WORK  ******      */
+
+.section-oder {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.oder-item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.oder-text{
+    width: 825px;
+    margin-top: 16px;
+}
+
+.oder-number{
+    display: block;
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 100%;
+    color: #E6E6E6;
+    margin-bottom: 30px;
+}
+
+.oder-item:nth-child(2n){
+    flex-direction: row-reverse;
+}

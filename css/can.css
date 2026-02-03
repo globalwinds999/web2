@@ -1,0 +1,210 @@
+/*      ****** WHAT CAN WE  ******      */
+
+.section-can {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.can-wrap {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+/* Первый блок "Surfaces" */
+.can-block {
+    width: 825px;
+    min-height: 520px;
+    background-color: #F3F3F3;
+    padding: 26px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовки и текст */
+.can-title {
+    margin-bottom: 20px;
+}
+
+.can-text {
+    width: 100%;
+    max-width: 683px;
+}
+
+/* Кнопки "Before/After" (если нужны) */
+.before-after-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin: 30px auto 0;
+    cursor: pointer;
+}
+
+/* ===== Видеосравнение (Before/After) ===== */
+.compare-wrapper {
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    position: relative;
+    background-color: #F3F3F3;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.compare-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.compare-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Ползунок */
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: rgba(255, 255, 255, 0.9);
+    cursor: ew-resize;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.slider .bar {
+    width: 4px;
+    height: 100%;
+    background: #fff;
+}
+
+.slider .handle {
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Адаптив */
+@media screen and (max-width: 900px) {
+    .can-wrap {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .can-block {
+        width: 100%;
+    }
+
+    .compare-wrapper {
+        height: 300px;
+    }
+}
+
+/* ===== HERO 3D CAROUSEL (FIX) ===== */
+
+.section-hero-carousel {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    perspective: 700px;
+    overflow: hidden;
+    touch-action: pan-y;
+    -ms-touch-action: pan-y;
+}
+
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-carousel__ring {
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.hero-carousel__card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 420px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #111;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    pointer-events: auto;
+}
+
+.hero-carousel__card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.hero-carousel__caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 24px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.02em;
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.45s ease,
+        transform 0.45s ease;
+    pointer-events: none;
+}
+
+/* активное состояние */
+.hero-carousel__card.is-active .hero-carousel__caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-carousel__card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40%;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0)
+    );
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+}

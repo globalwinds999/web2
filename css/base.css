@@ -1,0 +1,58 @@
+/*   НУЖНО ДОБАВИТЬ РУТ С ОСНОВНІМИ ЦВЕТАМИ, КОТОРЫЕ ДОЛЖЕН ВЫБРАТЬ ЗАКАЗЧИК*/
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: black;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    width: 1680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 100%;
+    color: #000000;
+}
+
+.mini-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+}

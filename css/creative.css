@@ -1,0 +1,26 @@
+/*      ****** CREATIVE  ******      */
+
+.section-creative{
+    padding-top: 194px;
+    padding-bottom: 100px;
+}
+
+.creative-block{
+    width: 825px;
+    height: 487px;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    padding-top: 26px;
+    padding-left: 26px;
+}
+
+.creative-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}

@@ -1,0 +1,180 @@
+/*  *****    HERO   ******  */
+
+.hero {
+    background-color: #000000;
+    padding-top: 200px;
+    padding-bottom: 190px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+}
+
+.overlay.visible {
+    opacity: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    opacity: 0;
+    padding-bottom: 74px;
+}
+
+/* Класс, который появится при старте второго видео */
+.hero-content.visible {
+    opacity: 1;
+}
+
+.hero-title {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 100%;
+    margin-bottom: 40px;
+    width: 723px;
+}
+
+.hero-title span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.hero-title span.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 90px;
+}
+
+.hero-btn{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    color: #FFFFFF;
+    border: none;
+    transform: rotate(-25deg) skew(25deg);
+    transform-style: preserve-3d;
+    position: relative;
+    background: transparent;
+    white-space: nowrap;
+}
+
+.hero-btn span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 70px;
+    background: #000000;
+    color: #fff;
+    font-size: 25px;
+    transition: 1.1s ease-out;
+    padding: 19px 32px;
+}
+
+.hero-btn:hover span {
+    z-index: 1000;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.hero-btn:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+.hero-btn:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+
+.hero-btn:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+
+.hero-btn:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+
+.hero-btn:hover span:nth-child(1) {
+    transform: translate(0px, 0px);
+    opacity: 0.2;
+}
+
+.hero-btn:active span:nth-child(5) {
+    transform: translate(20px, -20px);
+    opacity: 1;
+}
+
+.hero-btn:active span:nth-child(4) {
+    transform: translate(15px, -15px);
+}
+
+.hero-btn:active span:nth-child(3) {
+    transform: translate(10px, -10px);
+}
+
+.hero-btn:active span:nth-child(2) {
+    transform: translate(5px, -5px);
+}
+
+.hero-btn:active span:nth-child(1) {
+    transform: translate(0px, 0px);
+}
+
+.hero-btn:hover span {
+    background: #52e19f;
+}
+
+.hero-text,
+.hero-btn {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.hero-text.visible,
+.hero-btn.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

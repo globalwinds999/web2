@@ -1,0 +1,84 @@
+/*      ****** FEEDBACK  ******      */
+
+.section-feedback {
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 683px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    padding: 22px 26px;
+    border: 1px solid #D9D9D9;
+    width: 683px;
+}
+
+.feedback-form textarea{
+    height: 151px;
+    margin-bottom: 30px;
+}
+
+.feedback-form input[type="email"]{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.checkbox-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.feedback-form .checkbox-wrap input {
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    background-color: #D9D9D9;
+}
+
+.feedback-form button {
+    cursor: pointer;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    width: 683px;
+    height: 70px;
+    margin-top: 40px;
+}
+
+.feedback-form button:hover,
+.feedback-form button:focus {
+    background-color: #DADADA;
+    border: 1px solid #666666;
+    color: #000000;
+}
+
+.feedback-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.feedback-img{
+    width: 825px;
+    height: 678px;
+    background-color:#F3F3F3;
+}
+
+.feedback-wrap {
+    display: flex;
+    justify-content: space-between;
+}

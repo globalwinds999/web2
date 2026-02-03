@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/creative.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/capabilities.css" />
+    <link rel="stylesheet" href="./css/can.css" />
+    <link rel="stylesheet" href="./css/order.css" />
+    <link rel="stylesheet" href="./css/packages.css" />
+    <link rel="stylesheet" href="./css/feedback.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+</head>
+
+<body>
+    <header id="header" class="header hidden">
+        <div class="container"> 
+            
+            <div class="header-wrap">
+                
+            <nav class="nav-menu">
+                <ul class="list menu-list left-list">
+                    <li>
+                        <a href="" class="link nav-item ">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="link nav-item">Services</a>
+                    </li>
+                </ul>
+                <a href="index.html" class="link">
+                    <div class="logo-block">
+                        <img loading="eager" decoding="async" id="logo" src="./images/Muralvision 3d.png" alt="logo" class="logo"/>
+                    </div>
+                </a>
+                <ul class="list menu-list">
+                    <li><a href="" class="link nav-item">Gallery</a></li>
+                    <li><a href="" class="link nav-item">About Us</a></li>
+                    <li><a href="" class="link nav-item">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+     </div>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <video id="video1" autoplay muted playsinline preload="none">
+                    <source data-src="./images/MRLVSN3D.mp4" type="video/mp4">
+                </video>
+                <video id="video2" muted playsinline preload="none" style="display: none;">
+                    <source data-src="./images/Promo.mp4" type="video/mp4">        
+                </video>
+                <div class="overlay" id="overlay"></div>
+                <div class="hero-content" id="heroContent">
+                    <h1 class="hero-title animated-title"><span data-delay="100">We’re</span>
+                    <span data-delay="300">a</span>
+                    <span data-delay="500">Professional</span>
+                    <span data-delay="700">Art</span>
+                    <span data-delay="900">Design</span>
+                    <span data-delay="1100">Team</span></h1>
+                    <p class="hero-text hidden-text">Artistic Innovation in 3D:<br>Where Design, Depth, and Technology Unite</p>
+                    <button type="button" class="hero-btn hidden-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span>About us</span>
+                        </button>
+                </div>
+            
+        </div>
+        </section>
+        <section class="section-creative">
+            <div class="container creative-wrap">
+            
+            <h2 class="title">Let's get creative</h2>
+            <div class="creative-block">
+                <h3 class="mini-title">Housing projects</h3>
+                <p>We transform walls into vivid 3D art, filling spaces with dreams, energy, and inspiration.</p>
+            </div>
+            <div class="creative-block">
+                <h3 class="mini-title">Commercial projects</h3>
+                <p>Living art for emotions, technology, and style in one solution.</p>
+            </div>
+            <div class="creative-block">
+                <h3 class="mini-title">Advertising projects</h3>
+                <p>3D advertising that breathes life into brands and captures every eye.</p>
+            </div>
+            
+        </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <section class="section-gallery" data-barba="container" data-barba-namespace="gallery">
+            <div class="gallery-container">
+              <div class="gallery-ring">
+                <div class="gallery-img" data-bg="images/a1.jpg">
+                  </div>
+                  <div class="gallery-img" data-bg="images/a2.jpg">
+                  </div>
+                  <div class="gallery-img" data-bg="images/a3.jpg">
+                  </div>
+                  <div class="gallery-img" data-bg="images/a4.jpg">
+                  </div>
+                  <div class="gallery-img" data-bg="images/a5.png">
+                  </div>
+                  <div class="gallery-img" data-bg="images/a6.jpg">
+                  </div>
+                  <div class="gallery-img" data-bg="images/a7.jpg">
+                  </div>
+                  <div class="gallery-img" data-bg="images/a8.jpg">
+                  </div>
+                  <div class="gallery-img" data-bg="images/a9.jpg">
+                  </div>
+                  <div class="gallery-img" data-bg="images/a10.jpg">
+                  </div>
+                  <div class="gallery-img" data-bg="images/a11.jpg">
+                  </div>
+                  <div class="gallery-img" data-bg="images/a12.jpg">
+                  </div>
+                  <div class="gallery-img" data-bg="images/a1.jpg">
+                </div>
+                <div class="gallery-img" data-bg="images/a2.jpg">
+                </div>
+                <div class="gallery-img" data-bg="images/a3.jpg">
+                </div>
+                <div class="gallery-img" data-bg="images/a4.jpg">
+              </div>
+              <div class="gallery-img" data-bg="images/a5.png">
+            </div>
+            <div class="gallery-img" data-bg="images/a6.jpg">
+            </div>
+            <div class="gallery-img" data-bg="images/a7.jpg">
+            </div>
+            </div>
+          </section>
+        <section class="section-capabilities">
+            <div class="container">
+            <h2 class="title">Our capabilities</h2>
+            <ul class="list capabilities-wrap">
+                <li>
+                    <img loading="lazy" decoding="async" src="./images/capabilities.jpg" alt="" width="398"  height="300"/>
+                    <h3 class="mini-title capabilities-title">Volume and 3D depth</h3>
+                    <p class="capabilities-text">The wall is no longer flat: 3D printing creates the illusion of tangible depth and relief, bringing the mural to life.</p>
+                </li>
+                <li>
+                    <img loading="lazy" decoding="async" src="./images/capabilities.jpg" alt="" width="398" height="300" />
+                    <h3 class="mini-title capabilities-title">High quality and detail</h3>
+                    <p class="capabilities-text">
+                        High-resolution printing captures the finest details and hues with the precision you envision.
+                    </p>
+                </li>
+                <li>
+                    <img loading="lazy" decoding="async" src="./images/capabilities.jpg" alt="" width="398" height="300" />
+                    <h3 class="mini-title capabilities-title">High speed</h3>
+                    <p class="capabilities-text">
+                        Automated printing applies the image to the wall in a matter of hours, providing an almost instantaneous transformation
+                        of the space.
+                    </p>
+                </li>
+                <li>
+                    <img loading="lazy" decoding="async" src="./images/capabilities.jpg" alt="" width="398" height="300" />
+                    <h3 class="mini-title capabilities-title">Individuality</h3>
+                    <p class="capabilities-text">
+                        Each mural is created to suit the interior and style - its subject, texture and colors are individual and emphasize the character of the space.
+                    </p>
+                </li>
+                <li>
+                    <img loading="lazy" decoding="async" src="./images/capabilities.jpg" alt="" width="398" height="300" />
+                    <h3 class="mini-title capabilities-title">Artistic lighting</h3>
+                    <p class="capabilities-text"> 
+                        Frescoes reveal themselves differently in natural and artificial light - backlighting creates atmosphere and emphasizes volume.
+                    </p>
+                </li>
+                <li>
+                    <img loading="lazy" decoding="async" src="./images/capabilities.jpg" alt="" width="398" height="300" />
+                    <h3 class="mini-title capabilities-title">Eco-friendliness</h3>
+                    <p class="capabilities-text">
+                        The durable eco-friendly paints are safe for health and do not fade over time.
+                    </p>
+                </li>
+                <li>
+                    <img loading="lazy" decoding="async" src="./images/capabilities.jpg" alt="" width="398" height="300" />
+                    <h3 class="mini-title capabilities-title">Interactive</h3>
+                    <p class="capabilities-text">Support for AR and 3D visualization opens up new levels of engagement and digital interaction.</p>
+                </li>
+            </ul>
+        </div>
+        </section>
+        <section class="section-can">
+            <div class="container">
+                <h2 class="title">What can we</h2>
+        
+                <div class="can-wrap">
+        
+                   
+                    <!-- 🔹 ВСТАВЛЕННЫЙ БЛОК КАРУСЕЛИ -->
+                    <div class="can-block">
+                        <div class="section-hero-carousel">
+                            <div class="hero-carousel">
+                                <div class="hero-carousel__ring" id="ring">
+                                    <div class="hero-carousel__card">
+                                        <img loading="lazy" decoding="async" src="images/a1.jpg" alt="">
+                                        <div class="hero-carousel__caption">Дерево</div>
+                                      </div>
+                                      
+                                      <div class="hero-carousel__card">
+                                        <img loading="lazy" decoding="async" src="images/a2.jpg" alt="">
+                                        <div class="hero-carousel__caption">Стекло</div>
+                                      </div>
+                                      
+                                      <div class="hero-carousel__card">
+                                        <img loading="lazy" decoding="async" src="images/a3.jpg" alt="">
+                                        <div class="hero-carousel__caption">Металл</div>
+                                      </div>
+                                      <div class="hero-carousel__card">
+                                        <img loading="lazy" decoding="async" src="images/a1.jpg" alt="">
+                                        <div class="hero-carousel__caption">Дерево</div>
+                                      </div>
+                                      
+                                      <div class="hero-carousel__card">
+                                        <img loading="lazy" decoding="async" src="images/a2.jpg" alt="">
+                                        <div class="hero-carousel__caption">Стекло</div>
+                                      </div>
+                                      
+                                      <div class="hero-carousel__card">
+                                        <img loading="lazy" decoding="async" src="images/a3.jpg" alt="">
+                                        <div class="hero-carousel__caption">Металл</div>
+                                      </div>
+                                      <div class="hero-carousel__card">
+                                        <img loading="lazy" decoding="async" src="images/a1.jpg" alt="">
+                                        <div class="hero-carousel__caption">Дерево</div>
+                                      </div>
+                                      
+                                      <div class="hero-carousel__card">
+                                        <img loading="lazy" decoding="async" src="images/a2.jpg" alt="">
+                                        <div class="hero-carousel__caption">Стекло</div>
+                                      </div>
+                                      
+                                      <div class="hero-carousel__card">
+                                        <img loading="lazy" decoding="async" src="images/a3.jpg" alt="">
+                                        <div class="hero-carousel__caption">Металл</div>
+                                      </div>                                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Второй блок с видео -->
+                    <div class="can-block">
+                        <h3 class="mini-title can-title">Before and after</h3>
+                        <p class="can-text">
+                            You share with us your idea, your mood, your dream. We listen carefully
+                            and propose an artistic solution that combines technology, aesthetics
+                            and your individuality.
+                        </p>
+        
+                        <div class="compare-wrapper" style="margin-top: 30px;">
+                            <div class="compare-container" id="compareContainer">
+        
+                                <!-- Видео До -->
+                                <video id="videoBefore"
+                                       class="compare-video"
+                                       data-src="images/wall.mp4"
+                                       autoplay muted loop playsinline preload="none"></video>
+        
+                                <!-- Видео После -->
+                                <video id="videoAfter"
+                                       class="compare-video"
+                                       data-src="images/clean_wall.mp4"
+                                       autoplay muted loop playsinline preload="none"></video>
+        
+                                <!-- Ползунок -->
+                                <div class="slider" id="slider">
+                                    <div class="bar"></div>
+                                    <div class="handle"></div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+             
+        <section class="section-oder">
+            <div class="container">
+            <h2 class="title">How we work</h2>
+            <ul class="list oder-list" >
+                <li class="oder-item">
+                    <div>
+                    <span class="oder-number">01</span>
+                    <h3 class="mini-title">The idea that starts it all</h3>
+                    <p class="oder-text">
+                       You share with us your idea, your mood, your dream.
+                       We listen carefully and propose an artistic solution that combines technology, aesthetics and your individuality.
+                    </p>
+                    </div>
+                    <img loading="lazy" decoding="async" src="./images/capabilities.jpg" alt="" width="825" height="300"/>
+                </li>
+                <li class="oder-item">
+                    <div>
+                        <span class="oder-number">02</span>
+                        <h3 class="mini-title">Visualization down to the details</h3>
+                        <p class="oder-text">
+                            We create a 3D mock-up of your future mural - right in the interior.
+                            You see how it will look like, make edits - until the "wow" is complete. Only then do we start the process.
+
+                        </p>
+                        
+                    </div>
+                    <img loading="lazy" decoding="async" src="./images/capabilities.jpg" alt="" width="825" height="300" />
+                </li>
+                <li class="oder-item">
+                    <div>
+                        <span class="oder-number">03</span>
+                        <h3 class="mini-title">On-site realization</h3>
+                        <p class="oder-text">
+                            On the agreed day, we arrive and bring the project to life right on the wall.
+                            Clean, precise and beautiful - just like a rendering, only in reality.
+                        
+                        </p>
+                        
+                    </div>
+                    <img loading="lazy" decoding="async" src="./images/capabilities.jpg" alt="" width="825" height="300" />
+                </li>
+                <li class="oder-item">
+                    <div>
+                        <span class="oder-number">04</span>
+                        <h3 class="mini-title">Your response is our inspiration</h3>
+                        <p class="oder-text">
+                            On the agreed day, we arrive and bring the project to life right on the wall.
+                            Clean, precise and beautiful - just like a rendering, only in reality.
+                        </p>
+                        
+                    </div>
+                    <img loading="lazy" decoding="async" src="./images/capabilities.jpg" alt="" width="825" height="300" />
+                </li>
+            </ul>
+        </div>
+        </section>
+        <section class="section-packages">
+            <div class="container">
+            <h2 class="title">Service packages</h2>
+            <ul class="list packages-list">
+                <li>
+                    <img loading="lazy" decoding="async" src="./images/capabilities.jpg" alt="" width="540" height="392" />
+                    <h3 class="mini-title packages-title">Standard</h3>
+                    <p>The package includes:</p>
+                    <ul class="list packages-item-list">
+                        <li class="packages-point">
+                             <svg width="16" height="16" class="icon">
+                                    <use href="./images/icons.svg#icon-checkmark1"></use>
+                             </svg>  
+                            
+                            Consultation
+                        </li>
+                        <li class="packages-point">
+                            <svg width="16" height="16" class="icon">
+                                <use href="./images/icons.svg#icon-checkmark1"></use>
+                            </svg>
+                            Study
+                        </li>
+                        <li class="packages-point">
+                            <svg width="14" height="13" class="icon">
+                                <use href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                            Designing
+                        </li>
+                        <li>
+                            <svg width="14" height="13" class="icon">
+                                <use href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                            Simulation
+                        </li>
+                    </ul>
+                    <button type="button" class="packages-btn">Buy for 299$</button>
+                </li>
+                <li>
+                    <img loading="lazy" decoding="async" src="./images/capabilities.jpg" alt="" width="540" height="392" />
+                    <h3 class="mini-title packages-title">Standard</h3>
+                    <p>The package includes:</p>
+                    <ul class="list packages-item-list" >
+                        <li class="packages-point">
+                            <svg width="16" height="16" class="icon">
+                                <use href="./images/icons.svg#icon-checkmark1"></use>
+                            </svg>
+                            Consultation
+                        </li>
+                        <li class="packages-point">
+                            <svg width="16" height="16" class="icon">
+                                <use href="./images/icons.svg#icon-checkmark1"></use>
+                            </svg>
+                            Study
+                        </li>
+                        <li class="packages-point">
+                            
+                            <svg width="16" height="16" class="icon">
+                                <use href="./images/icons.svg#icon-checkmark1"></use>
+                            </svg>
+                            Designing
+                        </li>
+                        <li>
+                            <svg width="14" height="13" class="icon">
+                                <use href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                            Simulation
+                        </li>
+                    </ul>
+                    <button type="button" class="packages-btn">Buy for 799$</button>
+                </li>
+                <li>
+                    <img loading="lazy" decoding="async" src="./images/capabilities.jpg" alt="" width="540" height="392" />
+                    <h3 class="mini-title packages-title">Standard</h3>
+                    <p>The package includes:</p>
+                    <ul class="list packages-item-list">
+                        <li class="packages-point">
+                            <svg width="16" height="16" class="icon">
+                                <use href="./images/icons.svg#icon-checkmark1"></use>
+                            </svg>
+                            Consultation
+                        </li>
+                        <li class="packages-point">
+                            <svg width="16" height="16" class="icon">
+                                <use href="./images/icons.svg#icon-checkmark1"></use>
+                            </svg>
+                            Study
+                        </li>
+                        <li class="packages-point">
+                            <svg width="16" height="16" class="icon">
+                                <use href="./images/icons.svg#icon-checkmark1"></use>
+                            </svg>
+                            Designing
+                        </li>
+                        <li>
+                            <svg width="16" height="16" class="icon">
+                                <use href="./images/icons.svg#icon-checkmark1"></use>
+                            </svg>
+                            Simulation
+                        </li>
+                    </ul>
+                    <button type="button" class="packages-btn">Buy for 999$</button>
+                </li>
+            </ul>
+        </div>
+        </section>
+        <section class="section-feedback">
+            <div class="container feedback-wrap">
+            <div>
+                <h2 class="title">Feedback form</h2>
+                <p class="feedback-text">Leave your details and we will contact you.</p>
+                <form class="feedback-form">
+                    <input type="text" placeholder="Name" class="form-name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message"></textarea>
+                    <div class="checkbox-wrap">
+                        <input type="checkbox" id="privacy" required>
+                        <label for="privacy">I agree to the terms of the privacy policy.</label>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+                
+                
+            </div>
+            <div class="feedback-img"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-wrap">
+        <div class="footer-left">
+            <div class="logo-block">
+                <img loading="eager" decoding="async" id="logo" src="./images/Muralvision 3d.png" alt="logo" class="logo" />
+            </div>
+            <ul class="list social-list">
+                <div class="social-wrap">
+                    <svg width="26.62" height="26.64" class="social-icon">
+                        <use href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
+                </div>
+                <div class="social-wrap">
+                    <svg width="18.33" height="33.33" class="social-icon1">
+                        <use href="./images/icons.svg#icon-Vector-1"></use>
+                    </svg>
+                </div>
+                <div class="social-wrap">
+                    <svg width="32" height="32" class="social-icon">
+                        <use href="./images/icons.svg#icon-Vector-2"></use>
+                    </svg>
+                </div>
+            </ul>
+            <p>@MURALVISION 3D, 2025</p>
+        </div>
+        <div class="footer-center">
+            <ul class="list footer-list">
+                <li><a href="#" class="link footer-link">Home</a></li>
+                <li><a href="#" class="link footer-link">Services</a></li>
+                <li><a href="#" class="link footer-link">Gallery</a></li>
+                <li><a href="#" class="link footer-link">About us</a></li>
+                <li><a href="#" class="link footer-link">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <ul class="list right-footer-list">
+                <li class="grey-text">Our phone:</li>
+                <li class="footer-text">+7 (777) 888-99-88</li>
+                <li class="grey-text">Our address:</li>
+                <li class="footer-text">3427 Oakridge Drive, Austin, TX 78704, USA</li>
+                <li class="footer-text">PRIVACY POLICY</li>
+            </ul>
+        </div>
+    </div>
+    
+    </footer>
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>

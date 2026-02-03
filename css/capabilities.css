@@ -1,0 +1,24 @@
+/*      ****** CAPABILITIES  ******      */
+
+.section-capabilities{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.capabilities-wrap {
+    display: flex;
+    column-gap: 29px;
+    row-gap: 53px;
+    margin-top: 52px;
+    flex-wrap: wrap;
+}
+
+.capabilities-title{
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.capabilities-text{
+    width: 398px;
+    font-size: 18px;
+}
